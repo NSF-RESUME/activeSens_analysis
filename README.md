@@ -15,3 +15,4 @@ matplot(d$sobolmat, type = "l", main = 'sobol indices', xlab = "iteration")
 matplot(d$sigma2_A_mat, type = "l", xlab = "iteration")  
 plot(d$sigma2_vec, type = "l", xlab = "iteration")
 ```
+![Plots of eigf_d1_100s_300i](images/Picture1.png)

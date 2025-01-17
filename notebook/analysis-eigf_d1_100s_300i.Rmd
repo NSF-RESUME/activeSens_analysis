@@ -1,0 +1,19 @@
+---
+title: "MUSIC output analysis"
+output: html_notebook
+---
+
+The model used here is a stochastic SIR model having two parameters. The model runs can be reproduced by specifying a random seed. There are 100 rds files in the results folder holding the sensitivity indices estimates, where each of the 100 corresponds to a unique random seed/replicate. For each replicate of the model, we ran the MUSIC with EIGF and D1. Below is a sample script to read the rds files and the corresponding output. Each rds file contains a list of three elements, `sobolmat`, `sigma2_A_mat` and `sigma2_vec.` Each has one dimension with size 300, indicating that the sequential MUSIC algorithm was run for 300 iterations. Sobol indices are calculated as `sigma2_A/sigma2`.  
+
+```{r}
+
+seed <- 1
+
+d <- readRDS(paste0("../output/eigf_d1_100s_300i/eigf_d1_100s_300i_5.0_", seed, ".rds"))
+
+par(mfrow = c(1, 3))   
+matplot(d$sobolmat, type = "l", main = 'sobol indices', xlab = "iteration")  
+matplot(d$sigma2_A_mat, type = "l", xlab = "iteration")  
+plot(d$sigma2_vec, type = "l", xlab = "iteration") 
+```
+

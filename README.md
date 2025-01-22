@@ -4,6 +4,9 @@
 - notebook: analysis R notebooks
 - output: saved MUSIC output
   - [output/eigf_d1_100s_300i](https://github.com/NSF-RESUME/activeSens_analysis/tree/main/output/eigf_d1_100s_300i): EIGF + D1 (100 replicates, 300 iterations)
+  - [output/eigf_d2_100s_300i](https://github.com/NSF-RESUME/activeSens_analysis/tree/main/output/eigf_d2_100s_300i): EIGF + D2 (100 replicates, 300 iterations)
+  - [output/vigf_d1_100s_300i](https://github.com/NSF-RESUME/activeSens_analysis/tree/main/output/vigf_d1_100s_300i): VIGF + D1 (100 replicates, 300 iterations)
+  - [output/vigf_d2_100s_300i](https://github.com/NSF-RESUME/activeSens_analysis/tree/main/output/vigf_d2_100s_300i): VIGF + D2 (100 replicates, 300 iterations)
 
 ## Notes
 ### 1/17/25

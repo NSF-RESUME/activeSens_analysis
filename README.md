@@ -10,9 +10,9 @@
 
 ## Notes
 ### 1/17/25
-The eigf_d1_100s_300i data can be read in and visualized via:
+The data (i.e., the rds files in the `output` folders) can be read in and visualized via:
 ```
-d <- readRDS("eigf_d1_100s_300i_5.0_1.rds") 
+d <- readRDS("output/eigf_d1_100s_300i/eigf_d1_100s_300i_5.0_1.rds") 
 par(mfrow = c(1, 2))   
 matplot(d$sobolmat, type = "l", main = 'sobol indices', xlab = "iteration")  
 matplot(d$sigma2_A_mat, type = "l", xlab = "iteration")  
